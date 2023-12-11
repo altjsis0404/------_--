@@ -1,0 +1,32 @@
+#header {
+	width: 100%;
+	padding: 20px 0px;
+	.header_inner {
+		width: 1920px;
+		height: 100px;
+		margin: 0 auto;
+		position: relative;
+		> a {
+			position: absolute;
+			left: 210px;
+			img {
+				width: 300px;
+			}
+		}
+		.gnb {
+			position: absolute;
+			right: 210px;
+			ul {
+				float: right;
+				li {
+					float: left;
+					padding: 50px;
+					a {
+						font: 25px/1 'LotteMartHappy';
+						color: #555;
+					}
+				}
+			}
+		}
+	}
+}

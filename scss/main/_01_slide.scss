@@ -1,0 +1,16 @@
+#slide {
+	width: 1920px;
+	height: 600px;
+
+	.slide_wrap {
+		width: 1920px;
+		height: 600px;
+		overflow: hidden;
+
+		.slide_img {
+			position: relative;
+			display: flex;
+			transition: 0.5s;
+		}
+	}
+}

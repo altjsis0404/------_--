@@ -1,0 +1,38 @@
+#banner1 {
+	width: 100%;
+	overflow: hidden;
+	background-color: #fff;
+	margin-bottom: 50px;
+	a {
+		width: 1500px;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		h2 {
+			position: absolute;
+			font: 40px/1.5 'LotteMartHappy';
+			color: #555;
+			top: 30%;
+			left: 15%;
+		}
+		p {
+			position: absolute;
+			font: 20px/1.3 'LotteMartDream';
+			color: #555;
+			top: 43%;
+			left: 15%;
+		}
+		h3 {
+			position: absolute;
+			font: bold 18px/0.5 'LotteMartDream';
+			color: #555;
+			top: 58%;
+			left: 15%;
+		}
+	}
+}

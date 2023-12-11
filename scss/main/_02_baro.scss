@@ -1,0 +1,81 @@
+#baro {
+	width: 100%;
+	.baro_inner {
+		width: 1920px;
+		margin: 0 auto;
+		padding: 50px;
+		position: relative;
+		.txt {
+			color: #555;
+			padding-bottom: 50px;
+			text-align: center;
+			h2 {
+				font: 40px/1.5 'LotteMartHappy';
+			}
+			p {
+				font: 20px/1.3 'LotteMartDream';
+			}
+		}
+		.wrap {
+			width: 35%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+
+			.leftbaro {
+				text-align: center;
+				display: inline-block;
+
+				a {
+					width: 200px;
+					height: 200px;
+					img {
+						width: 60px;
+						height: 60px;
+						margin-bottom: 10px;
+					}
+					h3 {
+						font: 15px/1 'LotteMartDream';
+						margin-bottom: 50px;
+					}
+				}
+			}
+			.centerbaro {
+				text-align: center;
+				display: inline-block;
+
+				a {
+					width: 200px;
+					height: 200px;
+					img {
+						width: 60px;
+						height: 60px;
+						margin-bottom: 10px;
+					}
+					h3 {
+						font: 15px/1 'LotteMartDream';
+						margin-bottom: 50px;
+					}
+				}
+			}
+			.rightbaro {
+				text-align: center;
+				display: inline-block;
+
+				a {
+					width: 200px;
+					height: 200px;
+					img {
+						width: 60px;
+						height: 60px;
+						margin-bottom: 10px;
+					}
+					h3 {
+						font: 15px/1 'LotteMartDream';
+						margin-bottom: 50px;
+					}
+				}
+			}
+		}
+	}
+}
