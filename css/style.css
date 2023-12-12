@@ -209,10 +209,10 @@ a {
 }
 
 #baro {
-  width: 100%;
+  width: 1920px;
 }
 #baro .baro_inner {
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;
   padding: 50px;
   position: relative;
@@ -703,7 +703,6 @@ a {
 
 .story_txt {
   color: #555;
-  padding-bottom: 50px;
   text-align: center;
 }
 .story_txt h2 {
@@ -712,97 +711,100 @@ a {
 .story_txt p {
   font: 20px/1.3 "LotteMartDream";
 }
+.story_txt a {
+  font: 15px/3 "LotteMartDream";
+}
 
-#story {
+#story_inner {
   width: 100%;
-  height: 50vh;
-  color: #fff;
-  overflow: hidden;
-  position: relative;
+  margin: 0 auto;
 }
-#story .story_inner {
+#story_inner nav {
   width: 100%;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -25px;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 3;
+  margin-top: 20px;
+  margin-left: 43.5vw;
+  margin-bottom: -30px;
   display: flex;
-  justify-content: center;
+  gap: 30px;
 }
-#story .story_inner article {
-  width: 200px;
-  height: 100%;
-  text-align: center;
-  position: relative;
-  perspective: 700px;
+#story_inner nav a {
+  color: #999;
+  font: 20px/1 "LotteMartDream";
 }
-#story .story_inner article > a {
-  font: 12px/50px "Turret Road";
-  color: #aaa;
-  transition: 0.5s;
-  letter-spacing: 1px;
+#story_inner nav a.on {
+  color: #e97b1e;
+  background-color: #fff;
 }
-#story .story_inner article div {
+#story_inner section {
   width: 100%;
-  height: 300px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 1px solid #000;
-  padding: 10px;
-  position: absolute;
-  top: -100px;
-  left: 0;
-  opacity: 0;
-  transform: scale(0) rotateY(360deg);
-  transition: 0.5s;
+  display: none;
+  margin-left: 13.3vw;
+  padding: 5px;
 }
-#story .story_inner article div p {
+#story_inner section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#story_inner section article {
   width: 100%;
-  height: 90px;
+  height: 15vw;
+  padding: 40px;
+  margin-bottom: 40px;
+  float: left;
 }
-#story .story_inner article div p img {
+#story_inner section article .inner {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-#story .story_inner article div h2 {
-  height: 50px;
-  font: bold 12px/50px "Turret Road";
-  color: #fff;
-  text-align: center;
-  letter-spacing: 1px;
-}
-#story .story_inner article div ul {
-  width: 100%;
-  height: 150px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-evenly;
-}
-#story .story_inner article div ul li {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#story .story_inner article div ul li a {
-  font: 12px/1 "Turret Road";
-  color: #888;
-  letter-spacing: 1px;
-}
-#story .story_inner article div ul li a:hover {
-  color: orange;
-}
-#story .story_inner article:hover > a {
-  margin-left: -100px;
   opacity: 0;
+  transform: scale(0);
+  transition: 0.5s;
+  border-radius: 10px;
 }
-#story .story_inner article:hover div {
+#story_inner section article .inner img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+#story_inner section.on {
+  display: block;
+}
+#story_inner section.active article {
+  margin: 0 auto;
+}
+#story_inner section.active article .inner {
   opacity: 1;
-  transform: scale(1) rotateY(0deg);
+  transform: scale(1);
+}
+#story_inner #news article {
+  width: 24vw;
+  height: 480px;
+}
+#story_inner #news article .inner {
+  background-color: #e8dfd8;
+}
+#story_inner #cf article {
+  width: 24vw;
+  height: 480px;
+}
+#story_inner #cf article .inner {
+  background-color: #e8dfd8;
+}
+#story_inner #csr article {
+  width: 24vw;
+  height: 480px;
+}
+#story_inner #csr article .inner {
+  background-color: #e8dfd8;
+}
+#story_inner #event article {
+  width: 24vw;
+  height: 480px;
+}
+#story_inner #event article .inner {
+  background-color: #e8dfd8;
 }
 
 /*# sourceMappingURL=style.css.map */
